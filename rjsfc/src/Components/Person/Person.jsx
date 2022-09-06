@@ -6,12 +6,10 @@ const Person = (props) => {
     <div className="row">
       <div className="column">
         <div className="person-box">
-          <span>
-            <h1>{props.name}</h1>
-          </span>{" "}
-          <span>
-            <h1>{props.age}</h1>
-          </span>
+          <h1 onClick={props.remove}>{props.index} remove</h1>
+          <h1>{props.name}</h1>
+
+          <h1>{props.age}</h1>
         </div>
       </div>
     </div>
